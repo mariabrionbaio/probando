@@ -40,4 +40,14 @@ public class MovilPrepago {
     public float consultarSaldo() {
         return saldo;
     }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+    
+    @Override
+    public String toString(){
+        return "Núm de movil: " + numeroMovil + " - Saldo: " + saldo;
+    }
+    
 } //fin 
