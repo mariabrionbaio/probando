@@ -1,13 +1,13 @@
 package tema8.trabajadores;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Trabajador {
     private int id;
     private String nome;
-    private LocalDateTime datanac;
+    private LocalDate datanac;
 
-    public Trabajador(int id, String nome, LocalDateTime datanac) {
+    public Trabajador(int id, String nome, LocalDate datanac) {
         this.id = id;
         this.nome = nome;
         this.datanac = this.datanac;
@@ -29,11 +29,11 @@ public class Trabajador {
         this.nome = nome;
     }
 
-    public LocalDateTime getFechanac() {
+    public LocalDate getFechanac() {
         return datanac;
     }
 
-    public void setFechanac(LocalDateTime fechanac) {
+    public void setFechanac(LocalDate fechanac) {
         this.datanac = fechanac;
     }
     

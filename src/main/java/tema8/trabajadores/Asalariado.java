@@ -1,12 +1,12 @@
 package tema8.trabajadores;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Asalariado extends Trabajador {
     private double salarioBase;
     private int cantidadHorasExtra;
 
-    public Asalariado(double salarioBase, int cantidadHorasExtra, int id, String nome, LocalDateTime datanac) {
+    public Asalariado(double salarioBase, int cantidadHorasExtra, int id, String nome, LocalDate datanac) {
         super(id, nome, datanac);
         this.salarioBase = salarioBase;
         this.cantidadHorasExtra = cantidadHorasExtra;
@@ -28,7 +28,8 @@ public class Asalariado extends Trabajador {
         this.cantidadHorasExtra = cantidadHorasExtra;
     }
     
-    public double calcularSalarioFinal(){
+    public double calcularSalarioFinal(double hextra){
+        return salarioBase + cantidadHorasExtra * hextra;
         
     }
     
